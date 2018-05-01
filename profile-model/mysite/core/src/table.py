@@ -1,0 +1,1 @@
+TABLE={u'MealPlan.countDistinct': u'MealPlan.sol.txt', 'Spanning.cost': u'Spanning.sol.txt', 'IntoTheMatix.takingPills': 'IntoTheMatix.sol.txt', 'IntoTheMatrix.takingPills': 'IntoTheMatrix.sol.txt', 'AdditionGame.getMaximumPoints': 'AdditionGame.sol.txt'}

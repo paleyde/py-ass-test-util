@@ -1,0 +1,80 @@
+Problem Statement
+    	Fox Ciel can prepare exactly 4000 different dishes. For the purpose of this problem we will number them 1 through 4000. 
+
+
+
+Ciel always eats four meals per day: breakfast, lunch, dinner, and a late-night snack. For each meal she prepares and consumes one dish. 
+
+
+
+For each meal we know the list of dishes she may choose. You are given this information in the int[]s morningMeal, noonMeal, eveningMeal, and nightMeal. Each of these int[]s contains the numbers of dishes Ciel may prepare for the corresponding meal. 
+
+
+
+A meal plan is a sequence of four numbers specifying four valid dishes in the order in which Ciel may consume them during one day. Two meal plans are equivalent if they correspond to the same unordered quadruple of numbers - in other words, if Ciel consumes the same four dishes but possibly in a different order. Two meal plans are distinct if they are not equivalent. 
+
+
+
+For example, the meal plans {1,2,1,2} and {1,1,2,2} are equivalent, but the meal plans {1,1,1,2} and {1,2,2,2} are distinct. 
+
+
+
+Find and return the number of pairwise distinct meal plans.
+ 
+Definition
+    	
+Class:	MealPlan
+Method:	countDistinct
+Parameters:	int[], int[], int[], int[]
+Returns:	long
+Method signature:	long countDistinct(int[] morningMeal, int[] noonMeal, int[] eveningMeal, int[] nightMeal)
+(be sure your method is public)
+    
+ 
+Constraints
+-	morningMeal, noonMeal, eveningMeal and nightMeal will contain between 1 and 1,000 elements, inclusive.
+-	Each element in morningMeal, noonMeal, eveningMeal and nightMeal will be between 1 and 4,000, inclusive.
+-	Elements in morningMeal will be distinct.
+-	Elements in noonMeal will be distinct.
+-	Elements in eveningMeal will be distinct.
+-	Elements in morningMeal will be distinct.
+ 
+Examples
+0)	
+    	
+{1,2}
+{1,2}
+{1}
+{1}
+Returns: 3
+There are four valid meal plans: {1,1,1,1}, {1,2,1,1}, {2,1,1,1}, and {2,2,1,1}. However, two of them are equivalent: {1,2,1,1} is equivalent to {2,1,1,1}. Thus, Ciel can select at most three distinct meal plans.
+1)	
+    	
+{1,2,3}
+{4,5,6}
+{7,8,9}
+{10,11,12}
+Returns: 81
+In this test case there are 3^4 = 81 meal plans, and obviously all of them are distinct.
+2)	
+    	
+{1,2,3}
+{2,3,4}
+{3,4,5}
+{4,5,6}
+Returns: 55
+3)	
+    	
+{1,2,3,4,5,6,7,8,9,10}
+{1,3,7,6,8,2,11,13,17}
+{1,4,5,9,11,12,20}
+{1,4,12,18,19}
+Returns: 1993
+4)	
+    	
+{58}
+{58}
+{58}
+{58}
+Returns: 1
+This problem statement is the exclusive and proprietary property of TopCoder

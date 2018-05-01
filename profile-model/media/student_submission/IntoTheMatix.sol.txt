@@ -1,0 +1,161 @@
+};
+
+
+ System Test Results
+
+	Test Arguments		Expected Results		Success	
+
+	1, 1		0		Passed	
+
+
+	2, 10		3		Passed	
+
+
+	2, 1000		7		Passed	
+
+
+	10, 2		1		Passed	
+
+
+	4, 50		3		Passed	
+
+
+	1, 2		1		Passed	
+
+
+	1, 1000000		20		Passed	
+
+
+	1, 256		8		Passed	
+
+
+	2, 729		6		Passed	
+
+
+	2, 730		7		Passed	
+
+
+	2, 1520		7		Passed	
+
+
+	2, 2048		7		Passed	
+
+
+	2, 10000		9		Passed	
+
+
+	2, 1000000		13		Passed	
+
+
+	3, 343		5		Passed	
+
+
+	3, 125256		9		Passed	
+
+
+	3, 12345		7		Passed	
+
+
+	4, 125		3		Passed	
+
+
+	4, 126		4		Passed	
+
+
+	4, 625		4		Passed	
+
+
+	4, 626		5		Passed	
+
+
+	4, 390625		8		Passed	
+
+
+	4, 390626		9		Passed	
+
+
+	5, 216		3		Passed	
+
+
+	5, 217		4		Passed	
+
+
+	5, 46656		6		Passed	
+
+
+	5, 46657		7		Passed	
+
+
+	6, 49		2		Passed	
+
+
+	6, 50		3		Passed	
+
+
+	6, 117649		6		Passed	
+
+
+	6, 117650		7		Passed	
+
+
+	7, 262144		6		Passed	
+
+
+	7, 262145		7		Passed	
+
+
+	8, 531441		6		Passed	
+
+
+	8, 531442		7		Passed	
+
+
+	9, 1000		3		Passed	
+
+
+	9, 1001		4		Passed	
+
+
+	9, 10000		4		Passed	
+
+
+	9, 10001		5		Passed	
+
+
+	9, 1000000		6		Passed	
+
+
+	10, 121		2		Passed	
+
+
+	10, 122		3		Passed	
+
+
+	10, 1000		3		Passed	
+
+
+	10, 1000000		6		Passed	
+
+
+	1, 100		7		Passed	
+
+
+	1, 10000		14		Passed	
+
+
+	1, 999999		20		Passed	
+
+
+	8, 59049		5		Passed	
+
+
+	1, 100000		17		Passed	
+
+
+	3, 3		1		Passed	
+
+
+
+
+
+

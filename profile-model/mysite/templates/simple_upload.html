@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+  <form method="post" enctype="multipart/form-data">
+   <br><h2><font color="Teal">Add Assignment Site</font></h2><br>
+    {% csrf_token %}
+    <p>Signature Name:<input  type="text" name="signature"></p>
+    <p>PUZZLE FILE:<input type="file" name="myfile"></p>
+    <p>PUZZLE SOLUTION FILE:<input type="file" name="another_myfile"></p>
+    <button type="submit">Upload</button>
+  </form>
+
+  
+
+  <p><a href="{% url 'home' %}">Return to home</a></p>
+{% endblock %}

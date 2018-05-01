@@ -1,0 +1,77 @@
+ Problem Statement for Spanning
+
+
+Problem Statement
+    	Given a connected graph with nodes nodes, where each edge is undirected and has both a length and a cost, your task is to pick a subset of the edges such that the graph is still connected, the minimum distance between each pair of nodes is less than or equal to threshold, and the total cost is minimized. You should return this minimum cost. The graph will be given as a String[], g, each element of which represents an edge in the form "u v length cost", where u and v are the zero-based indices of the two nodes connected by this edge. For example, consider the following input:
+
+nodes = 3
+
+threshold = 5
+
+g = {"0 1 4 1","0 2 3 2","1 2 1 4"}
+
+If we select the first and second edges, then the distance between nodes 1 and 2 ends up being 7, greater than our threshold. However, if we pick the first and third edges, the distance between all pairs of nodes is 5 or less, and the cost is minimized (picking the second and third edges would cost more). Thus, we return the cost of these two edges, 5.
+ 
+Definition
+    	
+Class:	Spanning
+Method:	cost
+Parameters:	String[], int, int
+Returns:	int
+Method signature:	int cost(String[] g, int nodes, int threshold)
+(be sure your method is public)
+    
+ 
+Constraints
+-	g will contain between 1 and 18 elements, inclusive.
+-	nodes will be between 2 and 10, inclusive.
+-	threshold will be between 1 and 1000, inclusive.
+-	Each element of g will be formatted as "u v length cost", where u, v, length and cost are all integers with no extra leading zeros.
+-	Each u and v will be between 0 and nodes-1, inclusive.
+-	Each length and cost will be between 1 and 100, inclusive.
+-	No two elements of g will refer to edges between the same pair of nodes.
+-	In each element of g, u will not equal v.
+-	If you use all of the edges, the graph will be connected, and the minimum distance between each pair of nodes will be less than or equal to threshold.
+ 
+Examples
+0)	
+    	
+{"0 1 4 1","0 2 3 2","1 2 1 4"}
+3
+5
+Returns: 5
+1)	
+    	
+{"2 3 7 1",
+ "3 1 9 1",
+ "1 0 8 1",
+ "3 0 1 5",
+ "1 2 5 7",
+ "0 2 8 4"}
+4
+1000
+Returns: 3
+With the threshold this high, we just need to find the cheapest way to connect all the nodes. It turns out that the first, second and third edges do this cheapest.
+2)	
+    	
+{"2 3 7 1",
+ "3 1 9 1",
+ "1 0 8 1",
+ "3 0 1 5",
+ "1 2 5 7",
+ "0 2 8 4"}
+4
+10
+Returns: 14
+With the same graph, but a lower threshold, the best edges to use are the first, third, fourth, and fifth.
+3)	
+    	
+{"0 1 5 5"}
+2
+100
+Returns: 5
+This problem statement is the exclusive and proprietary property of TopCoder, Inc. Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited. (c)2010, TopCoder, Inc. All rights reserved.
+
+
+
+
